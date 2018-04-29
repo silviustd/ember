@@ -1,0 +1,36 @@
+<div class ="jumbo">
+    <div class = "right tomster">
+        <h2>Welcome</h2>
+      <p>
+          We hope you find exactlu what you're looking for
+      </p>
+        {{#link-to "about" class="button"}}About{{/link-to}}
+    </div>
+</div>
+
+{{#list-filter}}
+    filter = (action 'filterByCity') as filteredResult}}
+    <ul class="results>
+        {{#each filteredResults as |rentalUnit|}}
+        <li>{{rental-listing rental=rentalUnit}}</li>
+        {{/each}}
+    </ul>
+{{/list-filter}}
+
+{{#each model as |rental|}}
+<article class="listing">
+    <h3>{{rental.title}}</h3>
+    <div class="detail owner">
+        <span>Owner:</span>{{rental.owner}}
+    </div>
+    <div class="detail type">
+        <span>Type:</span>{{rental.category}}
+    </div>    
+    <div class="detail location">
+        <span>Type:</span>{{rental.location}}
+    </div>   
+    <div class="detail bedrooms">
+        <span>Type:</span>{{rental.bedrooms}}
+    </div>                 
+</article>
+{{/each}}
