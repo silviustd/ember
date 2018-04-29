@@ -1,3 +1,4 @@
+/*eslint-disable*/ 
 export default function() {
 
   // These comments are here to help you get started. Feel free to delete them.
@@ -60,7 +61,5 @@ export default function() {
          image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
        }
      }]
-   };
- });
 }
 
